@@ -1,0 +1,7 @@
+.MainBlockHeader{
+    background-color: #9bf3f3;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
