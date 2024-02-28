@@ -8,12 +8,13 @@ const list = '/list';
 const genre = '/genre';
 const search = '/search';
 const discover = '/discover';
+const images = '/images'
 
 const urls = {
     movies: `${discover}${movies}`,
-    // info: {
-    //     byId: (id: number) => {`${movies}/${id}`}
-    // },
+    info: {
+        byId: (id: number) => `${movies}/${id}`
+    },
     genre: `${genre}${movies}${list}`,
     search: `${search}${movies}`
 }

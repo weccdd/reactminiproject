@@ -14,11 +14,12 @@ export interface IMovie {
     vote_average:  number;
     vote_count:number;
 }
-
 export interface IData {
     page: number;
     results: IMovie[];
     total_pages: number;
     total_result: number;
-
+}
+export interface IId{
+    id:number
 }
