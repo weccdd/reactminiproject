@@ -1,3 +1,4 @@
+import {IGenreIds} from "../interface/MovieInterface";
 
 const baseURL= 'https://api.themoviedb.org/3'
 
@@ -8,14 +9,17 @@ const list = '/list';
 const genre = '/genre';
 const search = '/search';
 const discover = '/discover';
-const images = '/images'
+
 
 const urls = {
     movies: `${discover}${movies}`,
     info: {
         byId: (id: number) => `${movies}/${id}`
     },
-    genre: `${genre}${movies}${list}`,
+    genre: {
+        base:  `${genre}${movies}${list}`,
+        searchGenre: `${discover}${movies}`
+    },
     search: `${search}${movies}`
 }
 export {

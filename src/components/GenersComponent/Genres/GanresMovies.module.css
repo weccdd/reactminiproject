@@ -9,7 +9,6 @@
 }
 
 
-
 .Movie_img {
     width: 250px;
     height: 350px;
@@ -43,7 +42,7 @@
 }
 
 .Movie_title{
-    width: 15vw;
+    width: 20vw;
     height: 10px;
     text-align: center;
     margin-bottom: 0;

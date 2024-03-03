@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background-color: #569ea6;
 }
-
-
+.dark-theme{
+  background-color: #04565e;
+}

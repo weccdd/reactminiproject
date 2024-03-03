@@ -1,10 +1,53 @@
 .MoviesPage{
+
+}
+.Movies{
     width: 100vw;
-    height: 20vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0;
     margin: 40px;
+}
+.Button{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.Value_count_page{
+    border: 4px aqua dotted;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
 
+}
+.Button button{
+    height: 45px;
+    width: 150px;
+    margin: 0 75px;
+    background-color: #006e8f;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+}
+.Search_movie{
+    margin-left: 100px;
+}
+.Form{
+    margin-left: 100px;
+}
+.Dark{
+    background-color: black;
+}
+.Pagination{
+    width: 100vw;
+    height: 2vw;
+    display: flex;
+    justify-content: center;
 }

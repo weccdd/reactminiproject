@@ -1,0 +1,48 @@
+.Movie_details{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Movie_all_info{
+    width: 50vw;
+
+}
+.Movie_details_text{
+    width: 35vw;
+    margin: 0;
+}
+.Movie_details_text p{
+    font-size: 23px;
+}
+.Movie_details_img_block{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+.Movie_details_img{
+    width: 300px;
+}
+.Movie_details_genre{
+    display: flex;
+
+}
+.Movie_details_genre p{
+    margin: 25px 15px 0 0;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9bf3f3;
+
+}
+.Movie_details_rating{
+    margin: 0;
+    height: 5vh;
+    display: flex;
+}
+.Movie_details_rating_value{
+    margin: 50px 0 0 15px;
+}
