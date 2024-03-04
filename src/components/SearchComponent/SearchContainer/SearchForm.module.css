@@ -1,0 +1,22 @@
+.MainForm{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.Input_form{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+.Button_form{
+    background-color: #85e7f1;
+
+    border-radius: 20px;
+    margin-left: 20px;
+    width: 100px;
+    border: 1px solid #3b6569;
+}
+.Button_form:hover{
+    background-color: #7ab9be;
+    transition: 0.5s;
+}

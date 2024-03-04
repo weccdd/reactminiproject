@@ -1,9 +1,11 @@
-import {useEffect, useState} from "react";
-import {movieService} from "../../service/movieService";
-import {IAllPage, IMovie} from "../../interface/MovieInterface";
+import React, {useEffect, useState} from "react";
 import { useSearchParams} from "react-router-dom";
-import {Movies} from "../../components/MoviesComponent/Movies/Movies";
+
 import css from './Movies.module.css'
+import {IMovie} from "../../interface";
+import {movieService} from "../../service";
+import {Movies} from "../../components/MoviesComponent/Movies";
+
 
 
 
@@ -25,7 +27,7 @@ const MoviesPage = () => {
     console.log(movies);
     return (
         <div className={css.MoviesPage}>
-            {movies && <Movies movies={movies} setQuery={setQuery} page={page}/>}
+            <div>{movies && <Movies movies={movies} setQuery={setQuery} page={page}/>}</div>
         </div>
     );
 };

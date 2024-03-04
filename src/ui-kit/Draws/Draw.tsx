@@ -6,11 +6,15 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
-import { IGenres } from "../../interface/MovieInterface";
 import {FC} from "react";
 import { Divider } from "@mui/material";
+import {useNavigate} from "react-router-dom";
+
+
+
 import css from './Draw.module.css';
-import { useNavigate } from "react-router-dom";
+import {IGenres} from "../../interface";
+
 
 interface IProps {
     genre: IGenres;
@@ -47,7 +51,7 @@ const Draw: FC<IProps> = ({ genre }) => {
 
     return (
         <div>
-            <Button onClick={toggleDrawer(true)}>Genres</Button>
+            <Button onClick={toggleDrawer(true)} ><span className={css.Genres}> Genres </span></Button>
             <Drawer open={open} onClose={toggleDrawer(false)}>
                 {DrawerList}
             </Drawer>

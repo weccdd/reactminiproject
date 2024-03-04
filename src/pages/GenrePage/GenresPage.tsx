@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from "react";
-import {IMovie} from "../../interface/MovieInterface";
 import {useParams, useSearchParams} from "react-router-dom";
-import {genresService} from "../../service/genresService";
-import {GenresMovies} from "../../components/GenersComponent/Genres/GenresMovies";
-import css from './GenresPage.module.css'
 import {Pagination, Stack} from "@mui/material";
+
+import css from './GenresPage.module.css'
+import {IMovie} from "../../interface";
+import {genresService} from "../../service";
+import {GenresMovies} from "../../components/GenersComponent/Genres";
+
 
 const GenresPage = () => {
     const [genresMovies, setGenresMovies]= useState<IMovie[]>([])

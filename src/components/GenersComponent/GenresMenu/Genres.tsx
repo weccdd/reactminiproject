@@ -1,8 +1,11 @@
 import {useEffect, useState} from "react";
-import {IGenres} from "../../../interface/MovieInterface";
-import {genresService} from "../../../service/genresService";
-import {Draw} from "../../../ui-kit/Draws/Draw";
 import * as React from "react";
+
+import {IGenres} from "../../../interface";
+import {genresService} from "../../../service";
+import {Draw} from "../../../ui-kit/Draws";
+
+
 
 
 

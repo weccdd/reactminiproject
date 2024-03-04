@@ -1,19 +1,21 @@
 import {useParams, useSearchParams} from "react-router-dom";
 import React, {FC, useEffect, useState} from "react";
-import {IMovie} from "../../../interface/MovieInterface";
-import {searchService} from "../../../service/searchService";
-import {Movies} from "../../MoviesComponent/Movies/Movies";
-import {Movie} from "../../MoviesComponent/Movie/Movie";
+
+import {IMovie} from "../../../interface";
+import {searchService} from "../../../service";
+import {Movies} from "../../MoviesComponent/Movies";
+
+
+
 
 
 
 
 interface IProps {
-
     word:string
 }
 
-const SearchContainer:FC<IProps> = ({word}) => {
+const SearchComponent:FC<IProps> = ({word}) => {
     const {ids}=useParams();
 
     const [movie, setMovie] = useState<IMovie[]>([])
@@ -35,4 +37,4 @@ const SearchContainer:FC<IProps> = ({word}) => {
     );
 };
 
-export {SearchContainer};
+export {SearchComponent};

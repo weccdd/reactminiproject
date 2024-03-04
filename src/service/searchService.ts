@@ -1,7 +1,8 @@
 import {apiService} from "./apiService";
-import {IData} from "../interface/MovieInterface";
-import {urls} from "../constants/urls";
-import {IRes} from "../type/responseType";
+import {IRes} from "../type";
+import {IData} from "../interface";
+import {urls} from "../constants";
+
 
 
 

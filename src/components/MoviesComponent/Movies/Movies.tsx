@@ -1,9 +1,11 @@
 import React, { FC, useState } from "react";
-import {IAllPage, IMovie} from "../../../interface/MovieInterface";
 import { SetURLSearchParams } from "react-router-dom";
-import { Movie } from "../Movie/Movie";
+
 import css from './MoviesComponent.module.css';
 import { Pagination, Stack} from "@mui/material";
+import {IMovie} from "../../../interface";
+import {Movie} from "../Movie";
+
 
 interface IProps {
     movies: IMovie[];

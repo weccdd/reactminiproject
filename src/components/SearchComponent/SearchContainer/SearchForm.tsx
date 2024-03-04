@@ -1,31 +1,32 @@
-import { SubmitHandler, useForm } from "react-hook-form";
-import { useState } from "react";
-import { SearchContainer } from "./SearchComponent";
-import { ISearchWord } from "../../../interface/MovieInterface";
+import {SubmitHandler, useForm} from "react-hook-form";
+import {useState} from "react";
+
+import css from './SearchForm.module.css'
+import {SearchComponent} from "./SearchComponent";
+
+
+
 
 const SearchForm = () => {
-    const { handleSubmit, reset, register } = useForm();
-    const [word, setWord] = useState<string>('A');
+    const {handleSubmit, reset, register} = useForm()
+    const [word, setWord] = useState<string>('A')
 
-    // const search: SubmitHandler<ISearchWord> = (data: ISearchWord) => {
-    //     setWord(data.word);
-    //     reset();
-    // };
-
-    function search(data:string) {
-        setWord(data.word);
-             reset();
-    }
+    const search: SubmitHandler<any>= (query) => {
+        setWord(query.word)
+        reset()
+    };
 
     return (
         <div>
-            <form onSubmit={handleSubmit(search)}>
-                <input type="text" placeholder={'Movie'} {...register('word')} />
-                <button>Search</button>
-            </form>
-            <SearchContainer word={word} />
+           <div>
+               <form onSubmit={handleSubmit(search)} className={css.MainForm}>
+                   <input  type="text" placeholder={'Movie'} {...register('word')} className={css.Input_form}/>
+                   <button className={css.Button_form}>Search</button>
+               </form>
+           </div>
+            <SearchComponent word={word}/>
         </div>
     );
 };
 
-export { SearchForm };
+export {SearchForm};

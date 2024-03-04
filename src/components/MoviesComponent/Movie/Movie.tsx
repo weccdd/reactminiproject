@@ -1,9 +1,9 @@
-import {IMovie} from "../../../interface/MovieInterface";
 import {FC} from "react";
-
 import {useNavigate} from "react-router-dom";
+
 import css from './Movie.module.css'
 import Rating from "../../../ui-kit/Rating/Rating";
+import {IMovie} from "../../../interface";
 
 
 

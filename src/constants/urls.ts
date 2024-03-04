@@ -1,4 +1,4 @@
-import {IGenreIds} from "../interface/MovieInterface";
+
 
 const baseURL= 'https://api.themoviedb.org/3'
 

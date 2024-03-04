@@ -1,8 +1,9 @@
-import {IMovie} from "../../../interface/MovieInterface";
 import React, {FC} from "react";
+import {useNavigate} from "react-router-dom";
+
 import css from './GanresMovies.module.css'
 import Rating from "../../../ui-kit/Rating/Rating";
-import {useNavigate} from "react-router-dom";
+import {IMovie} from "../../../interface";
 
 
 interface IProps {

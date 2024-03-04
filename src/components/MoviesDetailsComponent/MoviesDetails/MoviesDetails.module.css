@@ -39,10 +39,16 @@
 
 }
 .Movie_details_rating{
-    margin: 0;
-    height: 5vh;
+
     display: flex;
 }
 .Movie_details_rating_value{
     margin: 50px 0 0 15px;
+}
+.text{
+    display: flex;
+}
+.Genre{
+    color: black;
+    margin: 0 10px;
 }

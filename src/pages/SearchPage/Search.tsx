@@ -1,5 +1,9 @@
-import {SearchForm} from "../../components/SearchComponent/SearchContainer/SearchForm";
+import {SearchForm} from "../../components/SearchComponent/SearchContainer";
 
+
+export interface ISearchWord{
+    word:string
+}
 const SearchPage = () => {
 
 

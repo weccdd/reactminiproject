@@ -31,6 +31,7 @@ const ThemSwicher = () => {
                 checked={checking}
                 onChange={handleChange}
                 color="default"
+
                 inputProps={{'aria-label': 'controlled'}}
             />}
             label=""

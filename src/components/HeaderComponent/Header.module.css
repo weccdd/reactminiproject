@@ -1,8 +1,57 @@
-.Block_header{
+.Main_block_header{
+    width: 99vw;
+    height: 12vh;
     background-color: #9bf3f3;
-    height: 10vh;
-    width: 100vw;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+.Nav_Header{
+    width: 95vw;
+    height: 10vh;
+    display: flex;
+}
+.Genres{
+    width: 33vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.Title{
+    width: 32vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Inst{
+    display: flex;
+    width: 33vw;
+    align-items: center;
+    justify-content: space-around;
+}
+.Search{
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    margin-right: 60px;
+}
+.Them_block{
+    margin: 10px 10px 0 0;
+}
+.Theme{
+    font-size: 25px;
+    color: black;
+    margin-right: 15px;
+}
+.Switcher{
+    margin-left: 20px;
+}
+.Log{
+    width: 35px;
+}
+.LogoLink{
+    text-decoration: none;
+    font-size: 40px;
+    color: black;
 }

@@ -1,8 +1,9 @@
 import {useEffect, useState} from "react";
-import {movieService} from "../../service/movieService";
 import {useParams} from "react-router-dom";
-import {IInfo} from "../../interface/MovieInterface";
+
 import {MoviesDetailsComponent} from "../../components/MoviesDetailsComponent/MoviesDetails/MoviesDetailsComponent";
+import {IInfo} from "../../interface";
+import {movieService} from "../../service";
 
 interface IProps {
     backdrop_patch: string;
