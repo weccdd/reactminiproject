@@ -33,15 +33,15 @@ const Draw: FC<IProps> = ({ genre }) => {
     const titleGenre = 'GENRE';
     const DrawerList = (
         <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-            <List className={css.Title_draw_blok}>
-                <ListItemText primary={titleGenre} className={css.Title_draw} />
+            <List className={css.Genre_title} >
+                <ListItemText  primary={titleGenre} className={css.Title_draw} />
             </List>
             <Divider />
-            <List>
+            <List className={css.Genre}>
                 {genre.genres.map((text, index) => (
                     <ListItem key={text.id} disablePadding>
-                        <ListItemButton>
-                            <ListItemText primary={text.name} onClick={()=>navigate(`/genre/${text.id}`)} />
+                        <ListItemButton >
+                            <ListItemText primary={text.name} onClick={()=>navigate(`/genre/${text.id}`)}/>
                         </ListItemButton>
                     </ListItem>
                 ))}

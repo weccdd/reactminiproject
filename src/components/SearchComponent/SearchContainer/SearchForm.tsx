@@ -3,6 +3,7 @@ import {useState} from "react";
 
 import css from './SearchForm.module.css'
 import {SearchComponent} from "./SearchComponent";
+import {ISearchWord} from "../../../interface";
 
 
 
